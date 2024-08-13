@@ -1,0 +1,97 @@
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>CV SETIADI TRANS</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <!-- fevicon -->
+  <link rel="icon" href="/assets/images/fevicon.png" type="image/gif" />
+  <!-- font css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
+
+  {%- if home.title -%}
+  <!-- Primary Meta Tags -->
+  <title>{{ home.title }}</title>
+  <meta name="title" content="{{ home.title }}" />
+  <meta name="description" content="{{ home.description }}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ home.url }}" />
+  <meta property="og:title" content="{{ home.title }}" />
+  <meta property="og:description" content="{{ home.description }}" />
+  <meta property="og:image" content="{{ site.url }}{{ home.image }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="{{ site.url }}{{ home.url }}" />
+  <meta property="twitter:title" content="{{ home.title }}" />
+  <meta property="twitter:description" content="{{ home.description }}" />
+  <meta property="twitter:image" content="{{ site.url }}{{ home.image }}" />
+
+  {%- else if page.title -%}
+  <!-- Primary Meta Tags -->
+  <title>{{ page.title }}</title>
+  <meta name="title" content="{{ page.title }}" />
+  <meta name="description" content="{{ page.description }}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="twitter:title" content="{{ page.title }}" />
+  <meta property="twitter:description" content="{{ page.description }}" />
+  <meta property="twitter:image" content="{{ site.url }}{{ page.image }}" />
+
+  {%- else if post.title -%}
+  <!-- Primary Meta Tags -->
+  <title>{{ post.title }}</title>
+  <meta name="title" content="{{ post.title }}" />
+  <meta name="description" content="{{ post.description }}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ post.url }}" />
+  <meta property="og:title" content="{{ post.title }}" />
+  <meta property="og:description" content="{{ post.description }}" />
+  <meta property="og:image" content="{{ site.url }}{{ post.image }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="{{ site.url }}{{ post.url }}" />
+  <meta property="twitter:title" content="{{ post.title }}" />
+  <meta property="twitter:description" content="{{ post.description }}" />
+  <meta property="twitter:image" content="{{ site.url }}{{ post.image }}" />
+  {%- endif -%}
+  <!-- {%- feed_meta -%} -->
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>
