@@ -1114,3 +1114,12 @@ textarea#comment::placeholder {
 .margin_top90 {
     margin-top: 90px;
 }
+
+.header-title {
+    color: #FEFEFE;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
