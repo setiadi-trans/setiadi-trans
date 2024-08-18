@@ -257,12 +257,6 @@ button {
     color: white !important;
 }
 
-.navbar-brand img {
-    height: 38px;
-    margin-right: 8px;
-    vertical-align: bottom;
-}
-
 .call_text_main{
     width: 100%;
     float: left;
