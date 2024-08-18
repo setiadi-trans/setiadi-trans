@@ -130,7 +130,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
     .banner_section {
-        padding: 100px 0px 90px 0px;
+        padding: 150px 0px 90px 0px;
     }
 
     .gallery_img img {
@@ -190,7 +190,7 @@
     }
 
     .banner_section {
-        padding: 60px 0px 60px 0px;
+        padding: 140px 0px 60px 0px;
     }
 
     .banner_taital {
@@ -277,7 +277,7 @@
 
     .banner_section{
         background: #ffffff;
-        padding: 70px 0px 90px 0px;
+        padding: 150px 0px 90px 0px;
     }
 
     .contact_bt {
@@ -400,7 +400,7 @@
 
     .banner_section{
         background: #ffffff;
-        padding: 70px 0px 90px 0px;
+        padding: 150px 0px 90px 0px;
     }
 
     .contact_bt {
