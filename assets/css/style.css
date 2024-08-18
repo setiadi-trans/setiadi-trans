@@ -254,6 +254,13 @@ button {
 .navbar-brand {
     margin: 0px;
     float: right;
+    color: white !important;
+}
+
+.navbar-brand img {
+    height: 38px;
+    margin-right: 8px;
+    vertical-align: bottom;
 }
 
 .call_text_main{
@@ -303,16 +310,18 @@ button {
     height: auto;
     background-size: 100%;
     padding: 200px 0px 160px 0px;
+    background-repeat: no-repeat;
 }
 
 .banner_taital_main {
     width: 100%;
     float: left;
+    height: 450px;
 }
 
 .banner_taital {
     width: 100%;
-    font-size: 60px;
+    font-size: 42px;
     color: #2c2c2c;
     font-weight: 800;
     line-height: 70px;
@@ -580,6 +589,10 @@ span.current {
     width: 100%;
     float: left;
     padding-top: 30px;
+}
+
+.gallery_img {
+    height: 182px;
 }
 
 .gallery_img img {
@@ -950,6 +963,10 @@ textarea#comment.massage-bt::placeholder {
     text-align: center;
 }
 
+.footeer_logo img {
+    height: 128px;
+}
+
 .footer_section_2{
     width: 100%;
     float: left;
@@ -985,6 +1002,8 @@ textarea#comment.massage-bt::placeholder {
     width: 100%;
     float: left;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .social_icon ul {
