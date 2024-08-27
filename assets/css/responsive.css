@@ -134,7 +134,8 @@
     }
 
     .gallery_img img {
-        min-height: 147px;
+        max-height: 100%;
+        height: auto;
     }
 
     .footer_taital {
@@ -227,7 +228,8 @@
     }
 
     .gallery_img img {
-        min-height: 100px;
+        max-height: 100%;
+        height: auto;
     }
 
     .client_section_2 {

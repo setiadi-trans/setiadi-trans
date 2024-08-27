@@ -32,11 +32,8 @@ layout: default
                 </p>
                 <div class="btn_main">
                   <div class="contact_bt active">
-                    <a
-                      href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil"
-                      target="_blank"
-                      >Hubungi Kami</a
-                    >
+                    <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil" target="_blank">Hubungi
+                      Kami</a>
                   </div>
                 </div>
               </div>
@@ -44,20 +41,15 @@ layout: default
             <div class="carousel-item">
               <div class="banner_taital_main">
                 <h2 class="banner_taital">
-                  Keliling <br /><span style="color: #f28005"
-                    >Cirebon & Sekitarnya</span
-                  >
+                  Keliling <br /><span style="color: #f28005">Cirebon & Sekitarnya</span>
                 </h2>
                 <p class="banner_text">
                   Bareng kita aja, kita bisa temani kamu touring
                 </p>
                 <div class="btn_main">
                   <div class="contact_bt active">
-                    <a
-                      href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil"
-                      target="_blank"
-                      >Hubungi Kami</a
-                    >
+                    <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil" target="_blank">Hubungi
+                      Kami</a>
                   </div>
                 </div>
               </div>
@@ -65,39 +57,24 @@ layout: default
             <div class="carousel-item">
               <div class="banner_taital_main">
                 <h2 class="banner_taital">
-                  Butuh <br /><span style="color: #f28005"
-                    >Mobil & Travel?</span
-                  >
+                  Butuh <br /><span style="color: #f28005">Mobil & Travel?</span>
                 </h2>
                 <p class="banner_text">
                   Kita bisa bantu kamu mendapatkan sewa mobil anda
                 </p>
                 <div class="btn_main">
                   <div class="contact_bt active">
-                    <a
-                      href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil"
-                      target="_blank"
-                      >Hubungi Kami</a
-                    >
+                    <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil" target="_blank">Hubungi
+                      Kami</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#banner_slider"
-            role="button"
-            data-slide="prev"
-          >
+          <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
             <i class="fa fa-angle-right"></i>
           </a>
-          <a
-            class="carousel-control-next"
-            href="#banner_slider"
-            role="button"
-            data-slide="next"
-          >
+          <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
             <i class="fa fa-angle-left"></i>
           </a>
         </div>
@@ -113,11 +90,7 @@ layout: default
       <div class="row">
         <div class="col-md-6">
           <div class="image_iman">
-            <img
-              alt="about"
-              src="/assets/images/about-img.png"
-              class="about_img"
-            />
+            <img alt="about" src="/assets/images/about-img.png" class="about_img" />
           </div>
         </div>
         <div class="col-md-6">
@@ -158,16 +131,12 @@ layout: default
   <div class="container">
     <div class="gallery_section_2">
       <div class="row">
-        {% assign sorted_posts = site.posts | sort: 'price1' | reverse %}
-        {% for post in sorted_posts %}
+        {% for post in paginator.posts | sort: 'price1' | reverse %}
         {% if post.tags contains 'cars' %}
-        <div class="col-md-4 mb-4">
+        <div class="col-md-6 mb-4">
           <div class="gallery_box">
             <div class="gallery_img">
-              <img
-                alt="{{ post.title }}"
-                src="{{ post.image }}"
-              />
+              <img alt="{{ post.title }}" src="{{ post.image }}" />
             </div>
             <h3 class="types_text">{{ post.title }}</h3>
             <p class="text-center">Kapasitas {{ post.capacity }} Kursi</p>
@@ -179,16 +148,42 @@ layout: default
             <p class="text-center m-0">Jangka Panjang</p>
             <p class="looking_text">Hubungi Kami</p>
             <div class="read_bt">
-              <a
-                href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20Innova%20Reborn%20Diesel%20Matic"
-                target="_blank"
-                >Pesan Sekarang</a
-              >
+              <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20Innova%20Reborn%20Diesel%20Matic"
+                target="_blank">Pesan Sekarang</a>
             </div>
           </div>
         </div>
         {% endif %}
         {% endfor %}
+        {% if paginator.total_pages > 1 %}
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              {% if paginator.previous_page %}
+              <div class="read_bt" style="padding-top: 0px;">
+                <a href="{{ paginator.previous_page_path }}#cars" role="button">
+                  <i class="fa fa-angle-left"></i>
+                </a>
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <p>
+                {{ paginator.page }} of {{ paginator.total_pages }}
+              </p>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              {% if paginator.next_page %}
+                <div class="read_bt" style="padding-top: 0px;">
+                  <a href="{{ paginator.next_page_path }}#cars" role="button">
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -240,148 +235,13 @@ layout: default
 <!-- client section start -->
 <div class="client_section layout_padding" id="customers">
   <div class="container">
-    <div id="custom_slider" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="client_taital">Testimoni</h2>
-          </div>
-        </div>
-        <div class="carousel-item active">
-          <div class="client_section_2">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_taital_box">
-                  <div class="client_img">
-                    <img alt="client 1" src="/assets/images/client-img1.png" />
-                  </div>
-                  <h3 class="moark_text">Hannery</h3>
-                  <p class="client_text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page
-                  </p>
-                </div>
-                <div class="quick_icon">
-                  <img alt="icon" src="/assets/images/quick-icon.png" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_taital_box">
-                  <div class="client_img">
-                    <img alt="client 3" src="/assets/images/client-img2.png" />
-                  </div>
-                  <h3 class="moark_text">Channery</h3>
-                  <p class="client_text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page
-                  </p>
-                </div>
-                <div class="quick_icon">
-                  <img alt="icon" src="/assets/images/quick-icon.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!-- <div class="row">
-            <div class="col-md-12">
-              <h1 class="client_taital">Testimoni</h1>
-            </div>
-          </div> -->
-          <div class="client_section_2">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_taital_box">
-                  <div class="client_img">
-                    <img alt="client 3" src="/assets/images/client-img1.png" />
-                  </div>
-                  <h3 class="moark_text">Hannery</h3>
-                  <p class="client_text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page
-                  </p>
-                </div>
-                <div class="quick_icon">
-                  <img alt="icon" src="/assets/images/quick-icon.png" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_taital_box">
-                  <div class="client_img">
-                    <img alt="client 4" src="/assets/images/client-img2.png" />
-                  </div>
-                  <h3 class="moark_text">Channery</h3>
-                  <p class="client_text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page
-                  </p>
-                </div>
-                <div class="quick_icon">
-                  <img alt="icon" src="/assets/images/quick-icon.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!-- <div class="row">
-            <div class="col-md-12">
-              <h1 class="client_taital">Testimoni</h1>
-            </div>
-          </div> -->
-          <div class="client_section_2">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_taital_box">
-                  <div class="client_img">
-                    <img alt="client 5" src="/assets/images/client-img1.png" />
-                  </div>
-                  <h3 class="moark_text">Hannery</h3>
-                  <p class="client_text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page
-                  </p>
-                </div>
-                <div class="quick_icon">
-                  <img alt="icon" src="/assets/images/quick-icon.png" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_taital_box">
-                  <div class="client_img">
-                    <img alt="client 6" src="/assets/images/client-img2.png" />
-                  </div>
-                  <h3 class="moark_text">Channery</h3>
-                  <p class="client_text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page
-                  </p>
-                </div>
-                <div class="quick_icon">
-                  <img alt="icon" src="/assets/images/quick-icon.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2496127.043045154!2d106.0365236!3d-6.7568758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1fd6090516cd%3A0xbd86bbd5604e9ef8!2sTravel%20Cirebon%20Jogja%20CV.%20SETIADI%20TRANS!5e1!3m2!1sen!2sid!4v1724746218509!5m2!1sen!2sid"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#custom_slider"
-        role="button"
-        data-slide="prev"
-      >
-        <i class="fa fa-angle-left"></i>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#custom_slider"
-        role="button"
-        data-slide="next"
-      >
-        <i class="fa fa-angle-right"></i>
-      </a>
     </div>
   </div>
 </div>
