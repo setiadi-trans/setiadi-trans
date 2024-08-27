@@ -7,5 +7,6 @@ image: "/uploads/Innova_reborn_diesel_manual.png"
 price1: 550
 price2: 850
 layout: post
+capacity: 7
 ---
 

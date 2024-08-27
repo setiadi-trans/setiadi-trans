@@ -7,5 +7,6 @@ image: "/uploads/mobilio_manual.png"
 price1: 350
 price2: 650
 layout: post
+capacity: 7
 ---
 

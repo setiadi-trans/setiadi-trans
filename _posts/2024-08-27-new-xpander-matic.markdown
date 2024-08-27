@@ -7,5 +7,6 @@ image: "/uploads/new_xpander_matic.png"
 price1: 495
 price2: 759
 layout: post
+capacity: 7
 ---
 
