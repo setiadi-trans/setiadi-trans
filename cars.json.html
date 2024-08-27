@@ -1,0 +1,22 @@
+---
+permalink: "/cars.json"
+layout: null
+---
+
+{
+  "cars": [
+    {% for post in site.posts %}
+    {% if post.tags contains 'cars' %}
+    {
+      "title": "{{ post.title | escape }}",
+      "date": "{{ post.date | date: '%b %d, %Y' }}",
+      "url": "{{ post.url | remove: site.url }}",
+      "image": {{ post.image | escape }},
+      "price1": {{ post.price1 | escape }},
+      "price2": {{ post.price2 | escape }},
+      "capacity": {{ post.capacity | escape }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endif %}
+    {% endfor %}
+  ]
+}

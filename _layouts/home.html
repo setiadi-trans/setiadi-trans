@@ -158,23 +158,23 @@ layout: default
   <div class="container">
     <div class="gallery_section_2">
       <div class="row">
-        <div class="col-md-4">
+        {% for post in site.posts %}
+        {% if post.tags contains 'cars' %}
+        <div class="col-md-4 mb-4">
           <div class="gallery_box">
             <div class="gallery_img">
               <img
-                alt="Innova Reborn Diesel Matic"
-                src="/assets/images/cars/Innova_reborn_diesel_manual.png"
-                width="250"
-                height="166"
+                alt="{{ post.title }}"
+                src="{{ post.image }}"
               />
             </div>
-            <h3 class="types_text">Innova Reborn Diesel Matic</h3>
-            <p class="text-center">Kapasitas 7 Kursi</p>
+            <h3 class="types_text">{{ post.title }}</h3>
+            <p class="text-center">Kapasitas {{ post.capacity }} Kursi</p>
             <hr />
             <p class="text-center m-0">Lepas Kunci</p>
-            <p class="looking_text mb-4">Rp. 600K</p>
+            <p class="looking_text mb-4">Rp. {{ post.price1 }}K</p>
             <p class="text-center m-0">Mobil + Supir</p>
-            <p class="looking_text mb-4">Rp. 900K</p>
+            <p class="looking_text mb-4">Rp. {{ post.price2 }}K</p>
             <p class="text-center m-0">Jangka Panjang</p>
             <p class="looking_text">Hubungi Kami</p>
             <div class="read_bt">
@@ -186,122 +186,8 @@ layout: default
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="gallery_box">
-            <div class="gallery_img">
-              <img
-                alt="Innova Reborn Diesel Manual"
-                src="/assets/images/cars/Innova_reborn_diesel_manual.png"
-                width="250"
-                height="166"
-              />
-            </div>
-            <h3 class="types_text">Innova Reborn Diesel Manual</h3>
-            <p class="text-center">Kapasitas 7 Kursi</p>
-            <hr />
-            <p class="text-center m-0">Lepas Kunci</p>
-            <p class="looking_text mb-4">Rp. 550K</p>
-            <p class="text-center m-0">Mobil + Supir</p>
-            <p class="looking_text mb-4">Rp. 850K</p>
-            <p class="text-center m-0">Jangka Panjang</p>
-            <p class="looking_text">Hubungi Kami</p>
-            <div class="read_bt">
-              <a
-                href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20Innova%20Reborn%20Diesel%20Manual"
-                target="_blank"
-                >Pesan Sekarang</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gallery_box">
-            <div class="gallery_img">
-              <img
-                alt="New Xpander Matic"
-                src="/assets/images/cars/new_xpander_matic.png"
-                width="250"
-                height="166"
-              />
-            </div>
-            <h3 class="types_text">New Xpander Matic<br />&nbsp;</h3>
-            <p class="text-center">Kapasitas 7 Kursi</p>
-            <hr />
-            <p class="text-center m-0">Lepas Kunci</p>
-            <p class="looking_text mb-4">Rp. 459K</p>
-            <p class="text-center m-0">Mobil + Supir</p>
-            <p class="looking_text mb-4">Rp. 759K</p>
-            <p class="text-center m-0">Jangka Panjang</p>
-            <p class="looking_text">Hubungi Kami</p>
-            <div class="read_bt">
-              <a
-                href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20New%20Xpander%20Matic"
-                target="_blank"
-                >Pesan Sekarang</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="gallery_section_2">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="gallery_box">
-            <div class="gallery_img">
-              <img
-                alt="New Avanza 2023 Matic"
-                src="/assets/images/cars/new_avanza_matic.png"
-                width="250"
-                height="166"
-              />
-            </div>
-            <h3 class="types_text">New Avanza 2023 Matic</h3>
-            <p class="text-center">Kapasitas 7 Kursi</p>
-            <hr />
-            <p class="text-center m-0">Lepas Kunci</p>
-            <p class="looking_text mb-4">Rp. 400K</p>
-            <p class="text-center m-0">Mobil + Supor</p>
-            <p class="looking_text mb-4">Rp. 700K</p>
-            <p class="text-center m-0">Jangka Panjang</p>
-            <p class="looking_text">Hubungi Kami</p>
-            <div class="read_bt">
-              <a
-                href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20New%20Avanza%202023%20Matic"
-                target="_blank"
-                >Pesan Sekarang</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gallery_box">
-            <div class="gallery_img">
-              <img
-                alt="Mobilio Manual"
-                src="/assets/images/cars/mobilio_manual.png"
-                width="250"
-                height="166"
-              />
-            </div>
-            <h3 class="types_text">Mobilio Manual<br />&nbsp;</h3>
-            <p class="text-center">Kapasitas 7 Kursi</p>
-            <hr />
-            <p class="text-center m-0">Lepas Kunci</p>
-            <p class="looking_text mb-4">Rp. 350K</p>
-            <p class="text-center m-0">Mobil + Supir</p>
-            <p class="looking_text mb-4">Rp. 650K</p>
-            <p class="text-center m-0">Jangka Panjang</p>
-            <p class="looking_text">Hubungi Kami</p>
-            <div class="read_bt">
-              <a
-                href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20Mobilio%20Manual"
-                target="_blank"
-                >Pesan Sekarang</a
-              >
-            </div>
-          </div>
-        </div>
+        {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
