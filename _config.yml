@@ -9,7 +9,7 @@ collections:
     title: Uploads
     output: true
 baseurl: ''
-url: https://setiadi-trans.github.io
+url: https://setiaditrans.com
 disqus:
   shortname: setiadi-trans
 google_analytics: 
