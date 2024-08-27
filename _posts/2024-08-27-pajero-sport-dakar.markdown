@@ -5,6 +5,7 @@ tags:
 - cars
 price1: 1400000
 price2: 1700000
+capacity: 7
 layout: post
 ---
 
