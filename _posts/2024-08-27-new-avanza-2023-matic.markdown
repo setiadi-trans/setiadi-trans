@@ -6,5 +6,6 @@ tags:
 image: "/uploads/new_avanza_matic.png"
 price1: 400
 price2: 700
+layout: post
 ---
 
