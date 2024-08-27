@@ -8,17 +8,17 @@ collections:
   uploads:
     title: Uploads
     output: true
-baseurl: ""
+baseurl: ''
 url: https://setiadi-trans.github.io
 disqus:
   shortname: setiadi-trans
-google_analytics:
+google_analytics: 
 theme: minima
 plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
+- jekyll-sitemap
+- jekyll-paginate
 include:
-  - _uploads
-  - ads.txt
-  - robot.txt
+- _uploads
+- ads.txt
+- robot.txt
 paginate: 4
