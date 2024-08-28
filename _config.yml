@@ -21,4 +21,5 @@ include:
 - _uploads
 - ads.txt
 - robot.txt
+- favicon.ico
 paginate: 4
