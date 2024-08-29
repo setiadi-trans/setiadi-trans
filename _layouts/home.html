@@ -31,9 +31,12 @@ layout: default
                   Cari disini mobil sesuai kebutuhanmu dan keinginan anda
                 </p>
                 <div class="btn_main">
-                  <div class="contact_bt active">
-                    <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil" target="_blank">Hubungi
-                      Kami</a>
+                  <div class="readmore_btn">
+                    <a
+                      href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil"
+                      target="_blank"
+                      >Hubungi Kami</a
+                    >
                   </div>
                 </div>
               </div>
@@ -41,15 +44,20 @@ layout: default
             <div class="carousel-item">
               <div class="banner_taital_main">
                 <h2 class="banner_taital">
-                  Keliling <br /><span style="color: #f28005">Cirebon & Sekitarnya</span>
+                  Keliling <br /><span style="color: #f28005"
+                    >Cirebon & Sekitarnya</span
+                  >
                 </h2>
                 <p class="banner_text">
                   Bareng kita aja, kita bisa temani kamu touring
                 </p>
                 <div class="btn_main">
-                  <div class="contact_bt active">
-                    <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil" target="_blank">Hubungi
-                      Kami</a>
+                  <div class="readmore_btn">
+                    <a
+                      href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil"
+                      target="_blank"
+                      >Hubungi Kami</a
+                    >
                   </div>
                 </div>
               </div>
@@ -57,24 +65,39 @@ layout: default
             <div class="carousel-item">
               <div class="banner_taital_main">
                 <h2 class="banner_taital">
-                  Butuh <br /><span style="color: #f28005">Mobil & Travel?</span>
+                  Butuh <br /><span style="color: #f28005"
+                    >Mobil & Travel?</span
+                  >
                 </h2>
                 <p class="banner_text">
                   Kita bisa bantu kamu mendapatkan sewa mobil anda
                 </p>
                 <div class="btn_main">
-                  <div class="contact_bt active">
-                    <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil" target="_blank">Hubungi
-                      Kami</a>
+                  <div class="readmore_btn">
+                    <a
+                      href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20mobil"
+                      target="_blank"
+                      >Hubungi Kami</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
+          <a
+            class="carousel-control-prev"
+            href="#banner_slider"
+            role="button"
+            data-slide="prev"
+          >
             <i class="fa fa-angle-right"></i>
           </a>
-          <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
+          <a
+            class="carousel-control-next"
+            href="#banner_slider"
+            role="button"
+            data-slide="next"
+          >
             <i class="fa fa-angle-left"></i>
           </a>
         </div>
@@ -90,23 +113,33 @@ layout: default
       <div class="row">
         <div class="col-md-6">
           <div class="image_iman">
-            <img alt="about" src="/assets/images/about-img.png" class="about_img" />
+            <img
+              alt="about"
+              src="/assets/images/about-home.png"
+              class="about_img"
+              style="border-radius: 30px; box-shadow: 0px 0px 6px 6px #f4f3f2"
+            />
           </div>
+          <!-- src="/assets/images/about-img.png" -->
         </div>
         <div class="col-md-6">
           <div class="about_taital_box">
             <h2 class="about_taital">Tentang Kami</h2>
             <p class="about_text">
-              <span style="color: #f28005">CV Setiadi Trans Jaya</span> adalah
-              sebuah perusahaan yang bergerak di bidang jasa transportasi yang
-              memiliki layanan seperti rental harian, charter, travel, tour, dan
-              shuttle. Didukung oleh tenaga kerja kami yang
+              <span style="color: #fabc3f; font-weight: bold"
+                >CV Setiadi Trans Jaya</span
+              >
+              adalah sebuah perusahaan yang bergerak di bidang jasa transportasi
+              yang memiliki layanan seperti rental harian, charter, travel,
+              tour, dan shuttle. Didukung oleh tenaga kerja kami yang
               profesional,menjadikan perjalanan kamu lebih menyenangkan dan akan
               merasa lebih nyaman. Ada berbagai macam pilihan unit kendaraan dan
               pilihan paket wisata seru yang bisa kamu pilih sesuai dengan
               kebutuhan kamu.
             </p>
-            <!-- <div class="readmore_btn"><a  href="#">Selengkapnya</a></div> -->
+            <div class="readmore_btn">
+              <a href="/tentang-kami">Selengkapnya</a>
+            </div>
           </div>
         </div>
       </div>
@@ -131,8 +164,8 @@ layout: default
   <div class="container">
     <div class="gallery_section_2">
       <div class="row">
-        {% for post in paginator.posts | sort: 'price1' | reverse %}
-        {% if post.tags contains 'cars' %}
+        {% for post in paginator.posts | sort: 'price1' | reverse %} {% if
+        post.tags contains 'cars' %}
         <div class="col-md-6 mb-4">
           <div class="gallery_box">
             <div class="gallery_img">
@@ -148,19 +181,20 @@ layout: default
             <p class="text-center m-0">Jangka Panjang</p>
             <p class="looking_text">Hubungi Kami</p>
             <div class="read_bt">
-              <a href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20Innova%20Reborn%20Diesel%20Matic"
-                target="_blank">Pesan Sekarang</a>
+              <a
+                href="https://wa.me/6287743623444?text=Halo%20saya%20mau%20sewa%20Innova%20Reborn%20Diesel%20Matic"
+                target="_blank"
+                >Pesan Sekarang</a
+              >
             </div>
           </div>
         </div>
-        {% endif %}
-        {% endfor %}
-        {% if paginator.total_pages > 1 %}
+        {% endif %} {% endfor %} {% if paginator.total_pages > 1 %}
         <div class="col-12">
           <div class="row">
             <div class="col-4 d-flex align-items-center justify-content-center">
               {% if paginator.previous_page %}
-              <div class="read_bt" style="padding-top: 0px;">
+              <div class="read_bt" style="padding-top: 0px">
                 <a href="{{ paginator.previous_page_path }}#cars" role="button">
                   <i class="fa fa-angle-left"></i>
                 </a>
@@ -168,17 +202,15 @@ layout: default
               {% endif %}
             </div>
             <div class="col-4 d-flex align-items-center justify-content-center">
-              <p>
-                {{ paginator.page }} of {{ paginator.total_pages }}
-              </p>
+              <p>{{ paginator.page }} of {{ paginator.total_pages }}</p>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-center">
               {% if paginator.next_page %}
-                <div class="read_bt" style="padding-top: 0px;">
-                  <a href="{{ paginator.next_page_path }}#cars" role="button">
-                    <i class="fa fa-angle-right"></i>
-                  </a>
-                </div>
+              <div class="read_bt" style="padding-top: 0px">
+                <a href="{{ paginator.next_page_path }}#cars" role="button">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
               {% endif %}
             </div>
           </div>
@@ -233,19 +265,130 @@ layout: default
 </div>
 <!-- choose section end -->
 <!-- client section start -->
-<div class="client_section layout_padding" id="customers">
+<div class="client_section layout_padding mb-5" id="customers">
   <div class="container">
+    <div class="col-12 text-center">
+      <h2 class="mb-4" style="font-weight: bold">Temukan Kami Disini</h2>
+    </div>
     <div class="row">
       <div class="col">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2496127.043045154!2d106.0365236!3d-6.7568758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1fd6090516cd%3A0xbd86bbd5604e9ef8!2sTravel%20Cirebon%20Jogja%20CV.%20SETIADI%20TRANS!5e1!3m2!1sen!2sid!4v1724746218509!5m2!1sen!2sid"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   </div>
 </div>
 <!-- client section end -->
+
+<div style="padding: 0px 50px 0px 50px">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <h2 class="mb-4" style="font-weight: bold">Client Kami</h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/ban.jpeg"
+        alt="Client 1"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/bsi.png"
+        alt="Client 2"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/dpr.jpg"
+        alt="Client 3"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/gerindra.png"
+        alt="Client 4"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/indosat.png"
+        alt="Client 5"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/kai.png"
+        alt="Client 6"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/pertamina.jpg"
+        alt="Client 7"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/pnsumber.png"
+        alt="Client 8"
+        class="img-fluid"
+      />
+    </div>
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+      style="align-content: center"
+    >
+      <img
+        src="/assets/images/client/tani.jpg"
+        alt="Client 9"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+</div>
+<!-- </div> -->
 
 <!-- copyright section end -->
 <!-- Javascript files-->

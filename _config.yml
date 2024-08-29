@@ -1,5 +1,5 @@
 ---
-title: CV SETIADI TRANS
+title: CV SETIADI TRANS JAYA
 timezone: UTC
 collections:
   posts:
@@ -8,18 +8,21 @@ collections:
   uploads:
     title: Uploads
     output: true
-baseurl: ''
+  pages:
+    title: Page
+    output: true
+baseurl: ""
 url: https://setiaditrans.com
 disqus:
   shortname: setiadi-trans
-google_analytics: 
+google_analytics:
 theme: minima
 plugins:
-- jekyll-sitemap
-- jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-paginate
 include:
-- _uploads
-- ads.txt
-- robot.txt
-- favicon.ico
+  - _uploads
+  - ads.txt
+  - robot.txt
+  - favicon.ico
 paginate: 4

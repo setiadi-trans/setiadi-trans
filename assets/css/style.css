@@ -404,6 +404,20 @@ button {
 
 /* banner section end */
 
+.service_section {
+    width: 100%;
+    float: left;
+    padding: 0px 0px 90px;
+    margin-top: 150px;
+}
+
+.subservice_section {
+    width: 100%;
+    float: left;
+    padding: 0px 0px 90px;
+    margin-top: 50px;
+}
+
 /* about section start */
 
 .about_section {
@@ -449,6 +463,7 @@ button {
     width: 170px;
     float: left;
     margin-top: 40px;
+    font-weight: bold;
 }
 
 .readmore_btn a {
@@ -456,7 +471,7 @@ button {
     float: left;
     font-size: 18px;
     color: #fcf8f8;
-    background-color: #F28005;
+    background-color: #FABC3F;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
@@ -464,7 +479,7 @@ button {
 
 .readmore_btn a:hover {
     color: #fcf8f8;
-    background-color: #363636;
+    background-color: #F28005;
 }
 
 
@@ -561,6 +576,28 @@ span.current {
 /* select box section end */
 /* search section end */
 
+.service_summary_section {
+    width: 100%;
+    float: left;
+    padding: 40px 0px;
+    margin-top: 20px;
+}
+
+.service_box {
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    height: auto;
+    padding: 20px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px 6px #f0ebe6;
+}
+.service_box:hover {
+    box-shadow: 0px 0px 6px 6px #babab9;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
 
 /* gallery section start */
 
@@ -603,6 +640,7 @@ span.current {
     background-color: #ffffff;
     height: auto;
     padding: 20px 20px;
+    border-radius: 30px;
     box-shadow: 0px 0px 6px 6px #f4f3f2;
 }
 .gallery_box:hover {
