@@ -6,6 +6,7 @@ tags:
 price1: 1400
 price2: 1700
 capacity: 7
+image: "/uploads/pajero.webp"
 layout: post
 ---
 
