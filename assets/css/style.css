@@ -209,13 +209,17 @@ button {
     padding: 0px;
 }
 
+.text-header {
+    color: black
+}
+
 
 /* header section start */
 
 .header_section {
     width: 100%;
     float: left;
-    background-color: #363636;
+    background-color: white;
     height: auto;
     background-size: 100%;
     position: fixed;
@@ -243,7 +247,8 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0px 20px;
     font-size: 17px;
-    color: #fefefd;
+    color: black;
+    font-weight: bold;
     margin: 0px 5px;
 }
 
@@ -278,6 +283,12 @@ button {
     text-align: center;
 }
 
+.call_text_ig {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .call_text a {
     width: 100%;
     float: left;
@@ -287,6 +298,18 @@ button {
 }
 
 .call_text a:hover {
+    color: #363636;
+}
+
+.call_text_ig a {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+.call_text_ig a:hover {
     color: #363636;
 }
 
@@ -302,10 +325,20 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    /* background-image: url(../images/banner-bg.png); */
     height: auto;
     background-size: 100%;
-    padding: 150px 0px 160px 0px;
+    padding: 160px 0px 160px 0px;
+    background-repeat: no-repeat;
+}
+
+.travel_section {
+    width: 100%;
+    float: left;
+    /* background-image: url(../images/banner-bg.png); */
+    height: auto;
+    background-size: 100%;
+    padding: 140px 0px 0px 0px;
     background-repeat: no-repeat;
 }
 
@@ -408,14 +441,13 @@ button {
     width: 100%;
     float: left;
     padding: 0px 0px 90px;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .subservice_section {
     width: 100%;
     float: left;
     padding: 0px 0px 90px;
-    margin-top: 50px;
 }
 
 /* about section start */
@@ -434,7 +466,17 @@ button {
 .about_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.about_taital_sub {
+    width: 100%;
+    float: left;
+    font-size: 20px;
     color: #3b3b3b;
     text-transform: uppercase;
     font-weight: bold;
@@ -451,12 +493,24 @@ button {
     width: 100%;
 }
 
+.service_img {
+    width: 70%;
+}
+
 .about_text {
     width: 91%;
     float: left;
     font-size: 16px;
     color: #2d2d2d;
     margin: 30px 0px 0px 0px;
+}
+
+.service_text {
+    width: 91%;
+    float: left;
+    font-size: 16px;
+    color: #2d2d2d;
+    margin: 10px 0px 0px 0px;
 }
 
 .readmore_btn {
@@ -491,7 +545,7 @@ button {
 .search_section {
     width: 100%;
     float: left;
-    background-color: #363636;
+    background-color: #F28005;
     height: auto;
     padding: 40px 0px;
     background-size: cover;
@@ -607,6 +661,12 @@ span.current {
     padding: 90px 0px;
 }
 
+.gallery_section_sub {
+    width: 100%;
+    float: left;
+    /* padding: 90px 0px; */
+}
+
 .gallery_taital {
     width: 100%;
     float: left;
@@ -627,6 +687,11 @@ span.current {
 .gallery_img {
     text-align: center;
     height: 182px;
+}
+
+.gallery_img_sub {
+    text-align: center;
+    /* height: 182px; */
 }
 
 .gallery_img img {
@@ -730,7 +795,7 @@ span.current {
 .choose_section{
     width: 100%;
     float: left;
-    background-color: #363636;
+    background-color: #F28005;
     height: auto;
     padding: 40px 0px;
 }
@@ -989,7 +1054,7 @@ textarea#comment.massage-bt::placeholder {
     width: 100%;
     float: left;
     height: auto;
-    background-color: #363636;
+    background-color: #F28005;
     background-size: 100%;
     padding: 50px 0px;
 }
@@ -1007,7 +1072,7 @@ textarea#comment.massage-bt::placeholder {
 .footer_section_2{
     width: 100%;
     float: left;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .footer_taital {
@@ -1016,7 +1081,7 @@ textarea#comment.massage-bt::placeholder {
     font-size: 26px;
     color: #fefefd;
     font-weight: bold;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .lorem_text {
