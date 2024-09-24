@@ -1,6 +1,6 @@
 ---
 title: New Avanza Matic
-date: 2024-08-27 07:49:00 Z
+date: 2024-09-24 21:10:00 Z
 tags:
 - cars
 image: "/uploads/new_avanza_matic.png"
