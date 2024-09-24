@@ -1,7 +1,6 @@
 ---
 title: CV SETIADI TRANS JAYA
 timezone: UTC
-future: true
 collections:
   pages:
     title: Page
@@ -12,6 +11,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+future: true
 baseurl: ''
 url: https://setiaditrans.com
 disqus:
