@@ -1,6 +1,6 @@
 ---
 title: ELF Long NLR Premium
-date: 2024-08-29 11:46:00 Z
+date: 2024-09-24 21:12:00 Z
 tags:
 - cars
 capacity: 20

@@ -1,6 +1,6 @@
 ---
 title: Toyota HiAce
-date: 2024-08-29 11:42:00 Z
+date: 2024-09-24 21:12:00 Z
 tags:
 - cars
 capacity: 15
