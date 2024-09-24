@@ -1,6 +1,6 @@
 ---
 title: Ertiga Matic
-date: 2024-08-29 11:44:00 Z
+date: 2024-09-24 21:08:00 Z
 tags:
 - cars
 capacity: 7
