@@ -11,6 +11,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+future: true
 baseurl: ''
 url: https://setiaditrans.com
 disqus:
