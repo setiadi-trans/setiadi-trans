@@ -1,6 +1,6 @@
 ---
 title: Innova Reborn Diesel Matic
-date: 2024-09-24 21:11:00 Z
+date: 2024-09-27 17:07:00 Z
 tags:
 - cars
 image: "/uploads/Innova_reborn_diesel_manual.png"
