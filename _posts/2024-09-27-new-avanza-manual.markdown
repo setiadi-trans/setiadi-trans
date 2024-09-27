@@ -1,6 +1,6 @@
 ---
 title: New Avanza Manual
-date: 2024-09-24 21:06:00 Z
+date: 2024-09-27 17:01:00 Z
 tags:
 - cars
 capacity: 7
